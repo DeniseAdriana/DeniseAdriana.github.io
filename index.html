@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alumno</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <header>
+      <h1>Alumno</h1> 
+        </header>
+    <form id="forma" action="javascript:Enviar()">
+      <p><em>El borde azul indica obligatorio.</em></p>
+      
+      <p>
+        <label accesskey="B">
+          Boleta
+          <input name="boleta" type="tel" autofocus required
+                 pattern=".{1,30}" maxlength="16" size="33"
+                 placeholder="10 a 16 digitos">
+        </label>    
+      </p>
+      
+      <p>
+        <label accesskey="N">
+          Nombre
+          <input name="nombre" type="text" autofocus required
+                 pattern=".{1,30}" maxlength="30" size="33"
+                 placeholder="1 a 30 caracteres">
+        </label>   
+      </p>
+      
+      <p>
+        <label accesskey="G">
+          Grupo
+          <input name="grupo" type="text" autofocus required
+                 pattern=".{1,30}" maxlength="5" size="33"
+                 placeholder="1 a 5 caracteres">
+        </label>   
+      </p>
+      
+      <p>
+        <label accesskey="M">
+          Materia
+          <input name="materia" type="text" autofocus required
+                 pattern=".{1,30}" maxlength="30" size="33"
+                 placeholder="1 a 30 caracteres">
+        </label>      
+      </p>
+      
+      <p>
+        <label accesskey="F">
+          Fecha 
+          <input name="fecha" type="date" autofocus required max="2022-01-24"
+                 min="2021-01-24" >
+        </label>
+        </p>
+        
+        <p>
+        <input type="submit" value="Enviar" accesskey="P">
+        <input type="reset" value="Limpiar">
+      </p>
+          <label>
+          Salida de informacion:
+          </label>
+      <br><output id="salidaBoleta"></output>
+      <br><output id="salidaNombre"></output>
+      <br><output id="salidaGrupo"></output>
+      <br><output id="salidaMateria"></output>
+      <br><output id="salidaFecha"></output>
+    </form>  
+        <br>
+        <footer>
+      Copyright 2021 Pérez Hernández Denise Adriana
+    </footer>
+        
+      <script src="js/CtrlAlumno.js"> 
+      </script>   
+    </body>
+</html>
