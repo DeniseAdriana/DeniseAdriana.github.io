@@ -3,6 +3,7 @@ var forma = document.getElementById("forma"),
         salidas = ["salidaBoleta", "salidaNombre", "salidaGrupo","salidaMateria", "salidaFecha"],
         txtFecha = forma["fecha"],salidaFecha = document.getElementById("salidaFecha"),
         MiFecha;
+
 forma.addEventListener("submit", Enviar, false);
 
 function Enviar() {
@@ -28,3 +29,12 @@ function Enviar() {
   var Salida = forma["salidaMateria"];
       Salida.value = "La materia es: "+ materia;     
 }
+ var firebaseConfig = {
+    apiKey: "AIzaSyDuu4GWFiK_2hqIvq7-pqyFrvUdKJgjp88",
+    authDomain: "alumno-7a953.firebaseapp.com",
+    projectId: "alumno-7a953",
+    storageBucket: "alumno-7a953.appspot.com",
+    messagingSenderId: "988363010766",
+    appId: "1:988363010766:web:7f97b5df4032829804969f",
+    measurementId: "G-X8W187JGY8"
+  };
